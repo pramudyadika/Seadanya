@@ -1,0 +1,10 @@
+C:\Users\rahmiyatul hasanah\Project Junior\Seadanya\Seadanya_testing\Seadanya_testing\bin\Debug\Seadanya_testing.exe.config
+C:\Users\rahmiyatul hasanah\Project Junior\Seadanya\Seadanya_testing\Seadanya_testing\bin\Debug\Seadanya_testing.exe
+C:\Users\rahmiyatul hasanah\Project Junior\Seadanya\Seadanya_testing\Seadanya_testing\bin\Debug\Seadanya_testing.pdb
+C:\Users\rahmiyatul hasanah\Project Junior\Seadanya\Seadanya_testing\Seadanya_testing\obj\Debug\Seadanya_testing.csproj.AssemblyReference.cache
+C:\Users\rahmiyatul hasanah\Project Junior\Seadanya\Seadanya_testing\Seadanya_testing\obj\Debug\Seadanya_testing.csproj.SuggestedBindingRedirects.cache
+C:\Users\rahmiyatul hasanah\Project Junior\Seadanya\Seadanya_testing\Seadanya_testing\obj\Debug\Seadanya_testing.Properties.Resources.resources
+C:\Users\rahmiyatul hasanah\Project Junior\Seadanya\Seadanya_testing\Seadanya_testing\obj\Debug\Seadanya_testing.csproj.GenerateResource.cache
+C:\Users\rahmiyatul hasanah\Project Junior\Seadanya\Seadanya_testing\Seadanya_testing\obj\Debug\Seadanya_testing.csproj.CoreCompileInputs.cache
+C:\Users\rahmiyatul hasanah\Project Junior\Seadanya\Seadanya_testing\Seadanya_testing\obj\Debug\Seadanya_testing.exe
+C:\Users\rahmiyatul hasanah\Project Junior\Seadanya\Seadanya_testing\Seadanya_testing\obj\Debug\Seadanya_testing.pdb

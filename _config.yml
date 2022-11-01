@@ -1,0 +1,5 @@
+remote_theme: pages-themes/merlot@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+title : Seadanya
+description : Sebuah aplikasi untuk memberikan saran dan resep berdasarkan bahan masakan yang telah diinput oleh user.
