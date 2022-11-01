@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Seadanya_testing
 {
-    public partial class Login : Form
+    public partial class Recipe : Form
     {
-        public Login()
+        public Recipe()
         {
             InitializeComponent();
         }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Homepage homepage = new Homepage();
             homepage.Show();

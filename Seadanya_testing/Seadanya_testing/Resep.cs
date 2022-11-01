@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Seadanya_testing
 {
-    internal class Resep
+    internal class recipeDetail
     {
         private string _nama;
         private string[] _bahan;
