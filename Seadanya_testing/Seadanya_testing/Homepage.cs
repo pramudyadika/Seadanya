@@ -26,5 +26,18 @@ namespace Seadanya_testing
         {
 
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Recipe recipe = new Recipe();
+            recipe.Show();
+            this.Hide();
+
+        }
     }
 }
