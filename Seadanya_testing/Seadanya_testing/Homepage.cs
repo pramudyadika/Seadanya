@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Seadanya_testing
 {
-    public partial class Login : Form
+    public partial class Homepage : Form
     {
-        public Login()
+        public Homepage()
         {
             InitializeComponent();
+        }
+
+        private void txtBoxSearchBar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelSearchTags_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
