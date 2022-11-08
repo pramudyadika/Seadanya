@@ -64,5 +64,12 @@ namespace Seadanya_testing
         {
             conn = new NpgsqlConnection(connstring);
         }
+
+        private void lbl_Login_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
