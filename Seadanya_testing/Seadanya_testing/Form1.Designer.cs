@@ -41,15 +41,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lbl_SignUp = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.btn_Login = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tb_Password = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.tb_Email = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbl_SignUp = new System.Windows.Forms.Label();
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -104,6 +104,29 @@
             this.bunifuShadowPanel1.Size = new System.Drawing.Size(415, 380);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 3;
+            // 
+            // lbl_SignUp
+            // 
+            this.lbl_SignUp.AutoSize = true;
+            this.lbl_SignUp.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_SignUp.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(174)))), ((int)(((byte)(24)))));
+            this.lbl_SignUp.Location = new System.Drawing.Point(246, 333);
+            this.lbl_SignUp.Name = "lbl_SignUp";
+            this.lbl_SignUp.Size = new System.Drawing.Size(62, 28);
+            this.lbl_SignUp.TabIndex = 8;
+            this.lbl_SignUp.Text = "Daftar";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(85, 333);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(168, 28);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Belum punya akun?";
             // 
             // btn_Login
             // 
@@ -269,6 +292,17 @@
             this.tb_Password.UseSystemPasswordChar = true;
             this.tb_Password.WordWrap = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(83, 199);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(206, 28);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Login untuk melanjutkan";
+            // 
             // tb_Email
             // 
             this.tb_Email.AcceptsReturn = false;
@@ -375,40 +409,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(83, 199);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(206, 28);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Login untuk melanjutkan";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(85, 333);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(168, 28);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Belum punya akun?";
-            // 
-            // lbl_SignUp
-            // 
-            this.lbl_SignUp.AutoSize = true;
-            this.lbl_SignUp.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_SignUp.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(174)))), ((int)(((byte)(24)))));
-            this.lbl_SignUp.Location = new System.Drawing.Point(246, 333);
-            this.lbl_SignUp.Name = "lbl_SignUp";
-            this.lbl_SignUp.Size = new System.Drawing.Size(62, 28);
-            this.lbl_SignUp.TabIndex = 8;
-            this.lbl_SignUp.Text = "Daftar";
             // 
             // Login
             // 

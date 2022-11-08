@@ -296,6 +296,7 @@ namespace Seadanya_testing
             this.btn_SignUp.TextMarginLeft = 0;
             this.btn_SignUp.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_SignUp.UseDefaultRadiusAndThickness = true;
+            this.btn_SignUp.Click += new System.EventHandler(this.btn_SignUp_Click);
             // 
             // bunifuTextBox2
             // 
