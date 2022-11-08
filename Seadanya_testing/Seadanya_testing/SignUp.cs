@@ -14,7 +14,12 @@ namespace Seadanya_testing
     public partial class SignUp : Form
     {
         private NpgsqlConnection conn;
-        
+        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=informatika;Database=seadanyajunpro";
+
+
+        public DataTable dt;
+        public static NpgsqlCommand cmd;
+        private string sql;
 
         public SignUp()
         {
@@ -28,7 +33,43 @@ namespace Seadanya_testing
 
         private void btn_SignUp_Click(object sender, EventArgs e)
         {
+            if(tb_Email.Text != "" && tb_Password.Text != "" && tb_Username.Text != "")
+            {
+                try
+                {
+                    conn.Open();
+                    sql = @"select * from signup(:_email_user,:_uname_user,:_pw_user)";
+                    cmd = new NpgsqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("_email_user", tb_Email.Text);
+                    cmd.Parameters.AddWithValue("_uname_user", tb_Username.Text);
+                    cmd.Parameters.AddWithValue("_pw_user", tb_Password.Text);
+                    if ((int)cmd.ExecuteScalar() == 1)
+                    {
+                        MessageBox.Show("Sign Up Berhasil!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error = " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lengkapi Data!");
+            }
+        }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+            conn = new NpgsqlConnection(connstring);
+        }
+
+        private void lbl_Login_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

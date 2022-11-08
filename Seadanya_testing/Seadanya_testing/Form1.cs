@@ -23,5 +23,12 @@ namespace Seadanya_testing
             homepage.Show();
             this.Hide();
         }
+
+        private void lbl_SignUp_Click(object sender, EventArgs e)
+        {
+            SignUp signup = new SignUp();
+            signup.Show();
+            this.Hide();
+        }
     }
 }
