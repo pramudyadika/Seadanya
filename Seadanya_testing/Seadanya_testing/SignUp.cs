@@ -46,6 +46,7 @@ namespace Seadanya_testing
                     if ((int)cmd.ExecuteScalar() == 1)
                     {
                         MessageBox.Show("Sign Up Berhasil!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        tb_Email.Text = tb_Password.Text = tb_Username.Text = ""; 
                     }
 
                 }
@@ -56,7 +57,7 @@ namespace Seadanya_testing
             }
             else
             {
-                MessageBox.Show("Lengkapi Data!");
+                MessageBox.Show("Mohon Lengkapi Data!");               
             }
         }
 
