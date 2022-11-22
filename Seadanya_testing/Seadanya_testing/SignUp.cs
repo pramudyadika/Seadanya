@@ -47,12 +47,17 @@ namespace Seadanya_testing
                     {
                         MessageBox.Show("Sign Up Berhasil!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         tb_Email.Text = tb_Password.Text = tb_Username.Text = ""; 
+                        conn.Close();
+                        Login login = new Login();
+                        login.Show();
+                        this.Hide();
                     }
 
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error = " + ex.Message);
+                    conn.Close();
                 }
             }
             else

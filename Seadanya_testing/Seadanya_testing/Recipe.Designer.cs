@@ -62,7 +62,7 @@ namespace Seadanya_testing
             this.label1.Location = new System.Drawing.Point(458, 645);
             this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 64);
+            this.label1.Size = new System.Drawing.Size(147, 64);
             this.label1.TabIndex = 11;
             this.label1.Text = "Bahan";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,7 +73,7 @@ namespace Seadanya_testing
             this.panel1.Controls.Add(this.bunifuButton1);
             this.panel1.Controls.Add(this.bunifuButton4);
             this.panel1.Controls.Add(this.lblHeader);
-            this.panel1.Location = new System.Drawing.Point(12, 319);
+            this.panel1.Location = new System.Drawing.Point(14, 319);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1034, 133);
             this.panel1.TabIndex = 10;

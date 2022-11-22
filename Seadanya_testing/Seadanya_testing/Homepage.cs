@@ -39,5 +39,12 @@ namespace Seadanya_testing
             this.Hide();
 
         }
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+            SearchPage searchpage = new SearchPage();
+            searchpage.Show();
+            this.Hide();
+        }
     }
 }

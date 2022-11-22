@@ -154,7 +154,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADUAAAAhCAYAAAB5oeP9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAXVJREFUWEflmO9NwzAUxDMCI3QERugI3gA2wEzQbkA3aDeADTpCR8gI+c6/cFfd
+        EAAACxABrSO9dQAAAXVJREFUWEflmO9NwzAUxDMCI3QERugI3gA2wEzQbkA3aDeADTpCR8gI+c6/cFfd
         Q4CeUSOhwoWT7kv82uQX2+fY3VQ91nL5WsvhpZZxrOVOl30FiAVgBgKFn2pZq9lPAuo/AslblfgphtxX
         j7flSiVe4tzJgGyHHoBWGRB67l4lXuLQyoDgHrAXKvNRlnQygRYq85GAsqQbuU6pzEccVnj4FlBVmZcY
         ABnQ7JLuuZadSryEpLvJgGDPpOPkT2AC6MeSji+H/zfFGPbLU836uFEz6WBGOttaziL/N90f0xnzJQ0G
@@ -166,7 +166,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABMsAAAIbCAYAAAD1gxm3AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAA/7JJREFUeF68vWV8XMuW3j2YZJIJvMlkMpN7jy3JIJmZmZmZmZmZmZmZmZktyWJm
+        EAAACxABrSO9dQAA/7JJREFUeF68vWV8XMuW3j2YZJIJvMlkMpN7jy3JIJmZmZmZmZmZmZmZmZktyWJm
         xlajmCXLN/931W611daRzz0zgQ/Pr/auXQyraj29qvovMvOKyNBQTHpeCZbcYg3m3EJBgRU5hZiybSjA
         lJP/A9R3LU6Oim9NQ6Wl0lTpp+dbkVFQTEZ+OeQ5U/yy5FmFUe7/C2QXlPwmcgpLv+PPff8Zfm84hcrp
         W6HKWqS1S1XIkL7JkH6xvktbqr4rb2N7qH79HkdB0rX/VhW0b6pvCkvIKirVYF9em5+CCqNgX4/KbW17
@@ -25019,12 +25019,14 @@
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Telur orak-arik adalah makanan yang terbuat dari telur diaduk atau dikocok bersama dalam wajan atau penggorengan saat dipanaskan dengan lembut, biasanya ditambahkan garam, mentega, dan bahan lainnya yang bervariasi. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 </value>
   </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAA2NJREFUaEPdmrFuE0EQhv0IeQQ3OZ8S394WVIgC0SAeAhHEA4QyEqSMBGmChARl
+        EAAACxABrSO9dQAAA2NJREFUaEPdmrFuE0EQhv0IeQQ3OZ8S394WVIgC0SAeAhHEA4QyEqSMBGmChARl
         IkGNoEbgOrhIGbprSG3hFzD7b/Yc+/yfd293z2fxS5+EfXM3O57dYfY2vZja3ZNyIMRhkuXnicivBiIv
         Blk+W+L2u9HuULyDLe4xt2+H0qF8qAeX5ZOlgTejwI/QaXAIRA1kVBlYMMhsIsQz46Z9tRUIoUhT2Tdu
         46vflztqzp8Rxy0jzvpS7phhxBF+KfXw1QW+OeJlaw+VK2zBx2ISXDSwOMmDOyUR0q9gmMzQh3ZN40yZ
@@ -25045,7 +25047,7 @@
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAA0JJREFUaEPdWj1vE0EQ9U/IT3CT88nx7W1BhSgQDaKCAtEhguhSYJeRgDISpDES
+        EAAACxABrSO9dQAAA0JJREFUaEPdWj1vE0EQ9U/IT3CT88nx7W1BhSgQDaKCAtEhguhSYJeRgDISpDES
         EpSJBP/DdXCRDtJdQ2oL/wGzb71r723G8n3M3p140pOTm93beZ7dubld9zhxOJRyIMQ4StKLSKTXA5Fm
         gyRd5bi+Njscic9oiz6mezcQj+RD7VySLnKOl2OGL6FVcRCiHJl5jtUmIhsJ8coMEx6hhBDM4lj2zbD8
         6PflgZrzU2LgwBTTvpQHxg0e4JtSN7+7wJsjX7SGyFz1FjwXF7WTBhYnceNWGQlZLWGYyJA3bZulI2XW
