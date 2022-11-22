@@ -10,5 +10,8 @@ namespace Seadanya_testing
     {
         private string _idLogin;
         private string _password;
+
+        public string IdLogin { get => _idLogin; set => _idLogin = value; }
+        public string Password { get => _password; set => _password = value; }
     }
 }
