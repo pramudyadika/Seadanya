@@ -1,5 +1,5 @@
 # Seadanya
-Sebuah aplikasi untuk memberikan saran dan resep berdasarkan bahan masakan yang telah diinput oleh user.
+Sebuah aplikasi untuk memberikan saran resep kepada user dengan budget seadanya.
 
 OTW Capstone<br/>
 
