@@ -12,6 +12,11 @@ namespace Seadanya_testing
 {
     public partial class Homepage : Form
     {
+        public recipeDetail recipe;
+
+/*        private string title;
+        private string desc;
+        private string image;*/
         public Homepage()
         {
             InitializeComponent();
@@ -34,16 +39,36 @@ namespace Seadanya_testing
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Recipe recipe = new Recipe();
-            recipe.Show();
+            Recipe _recipe = new Recipe(recipe);
+            _recipe.Show();
             this.Hide();
-
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
             SearchPage searchpage = new SearchPage();
             searchpage.Show();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Recipe _recipe = new Recipe(recipe);
+            _recipe.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Recipe _recipe = new Recipe(recipe);
+            _recipe.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Recipe _recipe = new Recipe(recipe);
+            _recipe.Show();
             this.Hide();
         }
     }

@@ -199,12 +199,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs" />
-    <Compile Include="flowPanel.cs">
+    <Compile Include="EditRecipe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="flowPanel.Designer.cs">
-      <DependentUpon>flowPanel.cs</DependentUpon>
+    <Compile Include="EditRecipe.Designer.cs">
+      <DependentUpon>EditRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs" />
+    <Compile Include="cardResep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cardResep.Designer.cs">
+      <DependentUpon>cardResep.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -240,8 +246,11 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="flowPanel.resx">
-      <DependentUpon>flowPanel.cs</DependentUpon>
+    <EmbeddedResource Include="EditRecipe.resx">
+      <DependentUpon>EditRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cardResep.resx">
+      <DependentUpon>cardResep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
