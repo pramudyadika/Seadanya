@@ -14,7 +14,7 @@ namespace Seadanya_testing
     public partial class SearchPage : Form
     {
         public static SearchPage srchPage;
-        List<recipeDetail> recipes;
+        // List<recipeDetail> recipes;
         private NpgsqlConnection conn;
         string connstring = "Host=localhost;Port=5432;Username=postgres;Password=informatika;Database=seadanyajunpro";
         private string sql;
@@ -22,9 +22,6 @@ namespace Seadanya_testing
         public SearchPage()
         {
             InitializeComponent();
-            conn = new NpgsqlConnection(connstring);
-            var recipes = getRecipes();
-            getCard(recipes);
         }
         private List<recipeDetail> getRecipes()
         {
@@ -56,6 +53,7 @@ namespace Seadanya_testing
             catch(Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+                conn.Close();
             }
             return recipes;
         }
@@ -78,6 +76,68 @@ namespace Seadanya_testing
         private void SearchPage_Load(object sender, EventArgs e)
         {
             srchPage = this;
+            conn = new NpgsqlConnection(connstring);
+            var recipes = getRecipes();
+            getCard(recipes);
+        }
+
+        private void searchResult(object sender, EventArgs e)
+        {
+            if (txtBoxSearchBar.Text.Length >= 1)
+            {
+                var recipes = searchRecipes();
+                getCard(recipes);
+            }
+            else
+            {
+                var recipes = getRecipes();
+                getCard(recipes);
+            }
+        }
+        private List<recipeDetail> searchRecipes()
+        {
+            var recipes = new List<recipeDetail>();
+            try
+            {
+                conn.Open();
+                sql = "select * from resep where resep.nama_resep ilike '%'|| :_searchTerm || '%'";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_searchTerm", txtBoxSearchBar.Text);
+                var data = cmd.ExecuteReader();
+                if (data.HasRows)
+                {
+                    while (data.Read())
+                    {
+                        var rec = new recipeDetail
+                        {
+                            Nama = data[0].ToString(),
+                            Desc = data[1].ToString(),
+                            Bahan = data[2].ToString(),
+                            Jumlah = data[3].ToString(),
+                            Step = data[4].ToString(),
+                            Image = data[5].ToString()
+                        };
+                        recipes.Add(rec);
+                    }
+                }
+                conn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: "+ex.Message);
+                conn.Close();
+            }
+            return recipes;
+        }
+
+        private void backHome(object sender, FormClosingEventArgs e)
+        {
+            
+        }
+
+        private void pb_Back_Click(object sender, EventArgs e)
+        {
+            Homepage.home.Show();
         }
     }
 }

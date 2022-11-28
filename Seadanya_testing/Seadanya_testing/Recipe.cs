@@ -36,7 +36,9 @@ namespace Seadanya_testing
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            SearchPage.srchPage.Show();
+
+            SearchPage srchPage = new SearchPage();
+            srchPage.Show();
             this.Hide();
         }
 
@@ -50,6 +52,39 @@ namespace Seadanya_testing
         private void isidetailresep1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Batal_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                sql = "select * from deleteResep(:_nama)";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_nama", recipe.Nama);
+                if ((int)cmd.ExecuteScalar() == 1)
+                {
+                    MessageBox.Show("data berhasil dihapus");
+                    this.Dispose();
+                    SearchPage.srchPage.Show();
+                }
+                conn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("error: " + ex.Message);
+                conn.Close();
+            }
+        }
+
+        private void Recipe_Load(object sender, EventArgs e)
+        {
+            conn = new NpgsqlConnection(connstring);
+        }
+
+        private void backSearch(object sender, FormClosedEventArgs e)
+        {
+            SearchPage.srchPage.Show();
         }
 
         /*private void getRecipe(object sender, EventArgs e)
