@@ -206,17 +206,17 @@ namespace Seadanya_testing
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(356, 429);
+            this.label1.Location = new System.Drawing.Point(370, 429);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 31);
+            this.label1.Size = new System.Drawing.Size(319, 31);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Mungkin kamu mau coba masak ini";
+            this.label1.Text = "Resep satset anti ribet buat kamu";
             // 
             // pb_orakarik
             // 
             this.pb_orakarik.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_orakarik.Image = ((System.Drawing.Image)(resources.GetObject("pb_orakarik.Image")));
-            this.pb_orakarik.Location = new System.Drawing.Point(786, 488);
+            this.pb_orakarik.Location = new System.Drawing.Point(775, 488);
             this.pb_orakarik.Margin = new System.Windows.Forms.Padding(8, 4, 8, 4);
             this.pb_orakarik.Name = "pb_orakarik";
             this.pb_orakarik.Size = new System.Drawing.Size(204, 133);
@@ -228,7 +228,7 @@ namespace Seadanya_testing
             // pb_saladsayur
             // 
             this.pb_saladsayur.Image = ((System.Drawing.Image)(resources.GetObject("pb_saladsayur.Image")));
-            this.pb_saladsayur.Location = new System.Drawing.Point(327, 488);
+            this.pb_saladsayur.Location = new System.Drawing.Point(310, 488);
             this.pb_saladsayur.Margin = new System.Windows.Forms.Padding(8, 4, 8, 4);
             this.pb_saladsayur.Name = "pb_saladsayur";
             this.pb_saladsayur.Size = new System.Drawing.Size(206, 133);
@@ -240,7 +240,7 @@ namespace Seadanya_testing
             // pb_mie
             // 
             this.pb_mie.Image = ((System.Drawing.Image)(resources.GetObject("pb_mie.Image")));
-            this.pb_mie.Location = new System.Drawing.Point(554, 488);
+            this.pb_mie.Location = new System.Drawing.Point(540, 488);
             this.pb_mie.Margin = new System.Windows.Forms.Padding(8, 4, 8, 4);
             this.pb_mie.Name = "pb_mie";
             this.pb_mie.Size = new System.Drawing.Size(211, 133);
@@ -252,7 +252,7 @@ namespace Seadanya_testing
             // pb_sotokudus
             // 
             this.pb_sotokudus.Image = ((System.Drawing.Image)(resources.GetObject("pb_sotokudus.Image")));
-            this.pb_sotokudus.Location = new System.Drawing.Point(96, 488);
+            this.pb_sotokudus.Location = new System.Drawing.Point(76, 488);
             this.pb_sotokudus.Margin = new System.Windows.Forms.Padding(8, 4, 8, 4);
             this.pb_sotokudus.Name = "pb_sotokudus";
             this.pb_sotokudus.Size = new System.Drawing.Size(210, 133);
@@ -281,6 +281,7 @@ namespace Seadanya_testing
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Homepage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelHeaderDesc.ResumeLayout(false);
             this.panelHeaderDesc.PerformLayout();

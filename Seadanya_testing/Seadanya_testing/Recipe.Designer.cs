@@ -109,7 +109,7 @@ namespace Seadanya_testing
             this.btn_Submit.IdleIconLeftImage = null;
             this.btn_Submit.IdleIconRightImage = null;
             this.btn_Submit.IndicateFocus = false;
-            this.btn_Submit.Location = new System.Drawing.Point(575, 624);
+            this.btn_Submit.Location = new System.Drawing.Point(859, 624);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Submit.OnDisabledState.BorderRadius = 15;
@@ -199,7 +199,7 @@ namespace Seadanya_testing
             this.btn_Batal.IdleIconLeftImage = null;
             this.btn_Batal.IdleIconRightImage = null;
             this.btn_Batal.IndicateFocus = false;
-            this.btn_Batal.Location = new System.Drawing.Point(329, 624);
+            this.btn_Batal.Location = new System.Drawing.Point(414, 624);
             this.btn_Batal.Name = "btn_Batal";
             this.btn_Batal.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Batal.OnDisabledState.BorderRadius = 15;
@@ -240,6 +240,7 @@ namespace Seadanya_testing
             this.btn_Batal.TextMarginLeft = 0;
             this.btn_Batal.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_Batal.UseDefaultRadiusAndThickness = true;
+            this.btn_Batal.Click += new System.EventHandler(this.btn_Batal_Click);
             // 
             // cardImage
             // 
@@ -253,7 +254,7 @@ namespace Seadanya_testing
             this.cardImage.IsCircle = false;
             this.cardImage.Location = new System.Drawing.Point(45, 61);
             this.cardImage.Name = "cardImage";
-            this.cardImage.Size = new System.Drawing.Size(286, 213);
+            this.cardImage.Size = new System.Drawing.Size(338, 213);
             this.cardImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cardImage.TabIndex = 22;
             this.cardImage.TabStop = false;
@@ -265,7 +266,7 @@ namespace Seadanya_testing
             this.groupBox1.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(45, 286);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(434, 322);
+            this.groupBox1.Size = new System.Drawing.Size(338, 322);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bahan";
@@ -275,7 +276,7 @@ namespace Seadanya_testing
             this.lbBahan.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBahan.Location = new System.Drawing.Point(6, 35);
             this.lbBahan.Name = "lbBahan";
-            this.lbBahan.Size = new System.Drawing.Size(422, 264);
+            this.lbBahan.Size = new System.Drawing.Size(280, 264);
             this.lbBahan.TabIndex = 1;
             this.lbBahan.Text = "bahan here";
             // 
@@ -283,9 +284,9 @@ namespace Seadanya_testing
             // 
             this.groupBox2.Controls.Add(this.lbLangkah);
             this.groupBox2.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(575, 286);
+            this.groupBox2.Location = new System.Drawing.Point(414, 286);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(434, 322);
+            this.groupBox2.Size = new System.Drawing.Size(595, 322);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Langkah";
@@ -295,16 +296,16 @@ namespace Seadanya_testing
             this.lbLangkah.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLangkah.Location = new System.Drawing.Point(7, 35);
             this.lbLangkah.Name = "lbLangkah";
-            this.lbLangkah.Size = new System.Drawing.Size(422, 264);
+            this.lbLangkah.Size = new System.Drawing.Size(582, 264);
             this.lbLangkah.TabIndex = 2;
             this.lbLangkah.Text = "langkah here";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lbDesc);
-            this.groupBox3.Location = new System.Drawing.Point(361, 161);
+            this.groupBox3.Location = new System.Drawing.Point(414, 161);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(648, 107);
+            this.groupBox3.Size = new System.Drawing.Size(595, 107);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Deskpsi";
@@ -321,10 +322,11 @@ namespace Seadanya_testing
             // lbTitle
             // 
             this.lbTitle.AutoSize = true;
-            this.lbTitle.Font = new System.Drawing.Font("Poppins", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle.Location = new System.Drawing.Point(366, 61);
+            this.lbTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lbTitle.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.Location = new System.Drawing.Point(416, 61);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(266, 84);
+            this.lbTitle.Size = new System.Drawing.Size(223, 70);
             this.lbTitle.TabIndex = 26;
             this.lbTitle.Text = "Title Here";
             // 
@@ -350,6 +352,8 @@ namespace Seadanya_testing
             this.Name = "Recipe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recipe";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.backSearch);
+            this.Load += new System.EventHandler(this.Recipe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardImage)).EndInit();
             this.groupBox1.ResumeLayout(false);

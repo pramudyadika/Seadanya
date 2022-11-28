@@ -39,7 +39,7 @@
             // 
             // bunifuPanel1
             // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
             this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
@@ -102,6 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.bunifuPanel1);
             this.MaximumSize = new System.Drawing.Size(960, 192);
             this.Name = "cardResep";
