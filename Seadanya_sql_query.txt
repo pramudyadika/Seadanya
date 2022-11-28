@@ -1,0 +1,95 @@
+
+
+-- Membuat tabel public.resep;
+
+CREATE TABLE IF NOT EXISTS public.resep
+(
+    nama_resep character varying(500),
+    desc_resep text,
+    bahan character varying(500),
+    jumlah_bahan text,
+    step text COLLATE,
+    img_resep_address character varying(500)
+)
+
+
+-- membuat tabel public.reguser;
+
+CREATE TABLE IF NOT EXISTS public.reguser
+(
+    uname_user character varying(100),
+    pw_user character varying(100),
+    id_user character varying(100),
+    email_user character varying(100),
+    CONSTRAINT reguser_pkey PRIMARY KEY (id_user)
+)
+
+-- Function
+
+CREATE OR REPLACE FUNCTION public.signup(
+	_email_user character varying,
+	_uname_user character varying,
+	_pw_user character varying)
+    RETURNS
+    LANGUAGE 'plpgsql'
+    
+AS 
+'
+begin
+	insert into public.reguser(
+		email_user,
+		uname_user,
+		pw_user
+	)
+	values(
+		_email_user,
+		_uname_user,
+		_pw_user
+	);
+	if found then
+		return 1;
+	else
+		return 0;
+	end if;
+end
+';
+
+-- function get resep
+
+CREATE OR REPLACE FUNCTION public.getresep(
+	)
+    RETURNS TABLE(nama character varying, deskripsi text, bahan character varying, jumlah text, step text, image character varying) 
+    LANGUAGE 'plpgsql'
+
+AS
+'
+begin
+	return query
+	select resep.nama_resep, resep.desc_resep, resep.bahan, resep.jumlah_bahan, resep.step, resep.img_resep_address from resep;
+end
+';
+
+-- function detail resep
+
+CREATE OR REPLACE FUNCTION public.detailresep(
+	_nama_resep character varying)
+    RETURNS TABLE(nama_resep character varying, desc_resep text, bahan character varying, jumlah_bahan text, step text, img_resep_address character varying) 
+    LANGUAGE 'plpgsql'
+
+
+AS 
+'
+begin
+	return query
+	select nama_resep, desc_resep, bahan, jumlah_bahan, step, img_resep_address from resep where nama_resep = _nama_resep;
+end
+';
+
+-- sequence
+
+CREATE SEQUENCE IF NOT EXISTS public.user_id
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
